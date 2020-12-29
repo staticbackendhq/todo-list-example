@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>StaticBackend to-do list example</title>
+</head>
+<body>
+	<div id="no-auth">
+		<form id="auth">
+			<input name="email" type="email" required placeholder="email">
+			<input name="password" type="password" required placeholder="password">
+			<button id="register">register</button>
+			<button id="login">login</button>
+		</form>
+	</div>
+	<div id="todos">
+		<form id="todo">
+			<input type="text" name="name" required placeholder="New to-do">
+			<button type="submit" value="Add"></button>
+		</form>
+		<ul id="items" style="padding-top: 20px;"></ul>
+	</div>
+	<script>
+		var s = document.createElement("script");
+		s.src = "/dist/app.js?x=" + (new Date().getTime());
+
+		document.body.appendChild(s);
+	</script>
+</body>
+</html>

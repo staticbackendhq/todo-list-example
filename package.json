@@ -1,0 +1,29 @@
+{
+  "name": "todo-list-example",
+  "version": "1.0.0",
+  "description": "A tiny to-do list app to demonstrate the usage of StaticBackend JavaScript library",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "build": "parcel build -d dist app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staticbackendhq/todo-list-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staticbackendhq/todo-list-example/issues"
+  },
+  "homepage": "https://github.com/staticbackendhq/todo-list-example#readme",
+  "dependencies": {
+    "@staticbackend/js": "^1.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "parcel": "^1.12.4",
+    "typescript": "^4.1.3"
+  }
+}
